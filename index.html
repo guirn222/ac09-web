@@ -1,4 +1,3 @@
-<!DOCTYPE html>
  <!DOCTYPE html>
  <html>
  <head>
@@ -7,27 +6,64 @@
     <link rel="stylesheet" href="estilo.css">
 
 
-    <title></title>
+    <title>pinto</title>
 
-    <script type="text/javascript" src="javascript.js">
         
-    </script>  
+
+        <script type="text/javascript" src="javascript.js">
+        
+        </script>  
 
  </head>
+
+
  <body>
-    
-    <header> 
-        <a href="ac6.html"> link </a>
-    </header>
+    <!header dessa bacaça>
+    <div id="London" class="tabcontent">
+        <h1>London</h1>
+    </div>
+      
+    <div id="Paris" class="tabcontent">
+        <h1>Paris</h1>
+    </div>
+      
+    <div id="Tokyo" class="tabcontent">
+        <h1>Tokyo</h1>
+    </div>
+      
+    <div id="Oslo" class="tabcontent">
+        <h1>Oslo</h1>
+    </div>
+      <div>
+      <button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">London</button>
+      <button class="tablink" onclick="openCity('Paris', this, 'green')">Paris</button>
+      <button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
+      <button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>
+      </div>
+      <!fim do header>
 
-    <form onsubmit='javascript: return msg()'>
 
-        <label for="nome">Nome</label> <br>
-        <input type="text" id="nome"> <br>
+    <div class="titulo">
+        Esse é o titulo
+    </div>
+    <br>
 
+    <form onsubmit='javascript: return msg()' class="formulario">
+        
+        <label for="nome">Nome:</label> <br>
+        <input class="campo-texto" type="text" id="nome"> <br>
+        
+        <label for="rg">Rg:</label> <br>
+        <input class="campo-texto" type="text" id="rg"> <br>
 
+        <label for="cpf">Cpf:</label> <br>
+        <input class="campo-texto" type="text" id="cpf"> <br>
 
-        <input type="submit" value="Enviar" >
+        <label for="data-nasc">Data de nascimento:</label> <br>
+        <input class="campo-texto" type="text" id="data-nasc"> <br>
+
+        <br>
+        <input class="botao" type="submit" value="Enviar" >
 
     </form>
 
