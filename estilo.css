@@ -39,8 +39,9 @@ body{
 
 .campo-texto{
   background-color:gainsboro;
-  border-width: 3px;
-  
+  border-width: 0px;
+  border-radius: 7px;  
+  padding: 5px;
 
 }
 
