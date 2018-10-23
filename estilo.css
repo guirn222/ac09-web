@@ -39,7 +39,7 @@ body{
 
 .campo-texto{
   background-color:gainsboro;
-  border-width: 5px;
+  border-width: 3px;
   
 
 }
@@ -48,16 +48,44 @@ body{
   background-color: #222;
   color: #F5F5F5;
   font-weight: bold;
+  border:50%;
+  border-radius: 7px;
+  font-size: 25px;
+  padding: 5px;
+}
+
+header{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background-color: #666;
+  width: 100%;
 }
 
 .titulo{
   text-align: center;
   font-size: 40px;
   background-color: #666;
-  padding-top: 60px;
+  padding-top: 13px;
   padding-bottom: 13px;
+  left: 0px;
+  top: 0px;
 }
 
 .formulario{
   padding-left: 20px;
+  padding-top: 50px;
 }
+
+footer{
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  background-color: #555;
+  width: 100%;
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+
+
