@@ -1,0 +1,44 @@
+<html lang="pt">
+
+    <head>
+        <meta charset="utf-8" />
+      <script>
+      
+              
+      function pali(){
+            var str = document.getElementById('palavra').value;
+            
+            var contrario = str.split("").reverse().join("");
+            
+
+            console.log(str);
+            console.log(contrario);
+            
+
+            if (str === contrario){
+                console.log("e palindromo");
+            }else{
+                console.log("nao e palindromo");
+            }
+        }
+      </script>
+    
+    </head>
+    
+      <body>
+              
+       <form onsubmit="javascript: return pali()">
+          
+            <label for="palavra">palavra</label> <br>
+            <input type="text" id="palavra"> <br>
+            
+               
+    
+            <input type="submit" value="Enviar">
+    
+       </form>
+    
+         
+      </body>
+    
+    </html>

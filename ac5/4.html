@@ -1,0 +1,38 @@
+<html lang="pt">
+
+    <head>
+        <meta charset="utf-8" />
+      <script>
+      
+              
+      function uni(){
+        var arr1 = document.getElementById('lista1').value;
+        var arr2 = document.getElementById('lista2').value;
+
+        console.log(arr1)
+        console.log(arr2)
+        console.log(arr1+arr2)        
+      }
+      </script>
+    
+    </head>
+    
+      <body>
+              
+       <form onsubmit="javascript: return uni()">
+          
+            <label for="lista1">lista 1</label> <br>
+            <input type="text" id="lista1"> <br>
+
+            <label for="lista2">lista 2</label> <br>
+            <input type="text" id="lista2"> <br>            
+               
+    
+            <input type="submit" value="Enviar">
+    
+       </form>
+    
+         
+      </body>
+    
+    </html>

@@ -1,0 +1,47 @@
+<html lang="pt">
+
+    <head>
+        <meta charset="utf-8" />
+      <script>
+      
+              
+      function checa(){
+        var str = document.getElementById('palavra').value;
+        if (str.length <6){
+            console.log("palavra invalida");
+        }else{
+            for(var i = 0; i<= 2;i++){
+                var j = str.length-1-i;
+                if (str[i]===str[j]){
+                    console.log("igual");
+                }else{
+                    console.log("diferente");
+                }
+
+            }
+        }
+        
+
+        
+      }
+      </script>
+    
+    </head>
+    
+      <body>
+              
+       <form onsubmit="javascript: return checa()">
+          
+            <label for="palavra">palavra</label> <br>
+            <input type="text" id="palavra"> <br>
+            
+               
+    
+            <input type="submit" value="Enviar">
+    
+       </form>
+    
+         
+      </body>
+    
+    </html>

@@ -1,0 +1,54 @@
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8" />
+  <script>
+  
+      
+          
+      function palavra(str){
+        
+        var cont = 0;
+        var palavra = String(str.value);        
+        var n = palavra.length;
+        
+        for(i = 0; i < n ; i++) {
+
+              if(palavra[i] =="A" || palavra[i] == "a") cont++;
+
+        }    
+          
+        console.log(cont);
+            
+      }
+  
+      function enviar() {
+      
+        var pala = document.getElementById("pala");
+        palavra(pala);
+
+      }  
+  
+  
+  </script>
+
+</head>
+
+  <body>
+      
+    
+ <form onsubmit="javascript: return enviar()">
+      
+        <label for="pala">Palavra</label> <br>
+        <input type="text" id="pala"> <br>
+        
+        <input type="submit" value="Enviar">
+
+ </form>
+
+     </form>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,40 @@
+9) Construa uma função que recebe uma palavra e devolve quantas vogais existe nestas palavras.
+
+<html lang="pt">
+
+    <head>
+        <meta charset="utf-8" />
+      <script>
+      
+              
+      function vogal(){
+        var cont = 0;
+        var palavra = document.getElementById('palavra').value;    
+        var n = palavra.length;
+        
+        for(i = 0; i < n ; i++) {
+            if(palavra[i]== 'a'|| palavra[i]== 'e'|| palavra[i]== 'i'||palavra[i]== 'o'||palavra[i]== 'u' || palavra[i]== 'A'|| palavra[i]== 'E'|| palavra[i]== 'I'||palavra[i]== 'O'||palavra[i]== 'U'){
+                cont++
+            }
+        } 
+        console.log(cont)
+      }
+      </script>
+    
+    </head>
+    
+      <body>
+              
+       <form onsubmit="javascript: return vogal()">
+          
+            <label for="palavra">palavra</label> <br>
+            <input type="text" id="palavra"> <br>
+
+            <input type="submit" value="Enviar">
+    
+       </form>
+    
+         
+      </body>
+    
+    </html> 

@@ -1,0 +1,41 @@
+<html lang="pt">
+
+    <head>
+        <meta charset="utf-8" />
+      <script>
+      
+              
+      function contrario(){
+            var str = document.getElementById('palavra').value;
+            //var normal = str.split('');
+
+            var contrario = "";
+            for (var i = str.length - 1; i >= 0; i--){        
+                contrario += str[i];
+            }
+            
+            console.log(contrario);
+            
+           
+        }
+      </script>
+    
+    </head>
+    
+      <body>
+              
+       <form onsubmit="javascript: return contrario()">
+          
+            <label for="palavra">palavra</label> <br>
+            <input type="text" id="palavra"> <br>
+            
+               
+    
+            <input type="submit" value="Enviar">
+    
+       </form>
+    
+         
+      </body>
+    
+    </html>

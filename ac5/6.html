@@ -1,0 +1,52 @@
+6) Construa um formulário que possua os campos nome, 
+idade, altura e peso. Se nesta página for cadastrado 
+um nome diferentes de vázio, uma idade acima de 18 
+anos e um peso abaixo de 90kg, printe na console 
+a palavra OK, caso contrário printe na console a palavra NOK.
+
+<html lang="pt">
+
+    <head>
+        <meta charset="utf-8" />
+      <script>
+      
+              
+      function check(){
+        var nome = document.getElementById('nome').value;
+        var altura = document.getElementById('altura').value;
+        var idade = document.getElementById('idade').value;
+        var peso = document.getElementById('peso').value;
+        if (nome != '' && idade >18 && peso <90){
+            console.log("ok")
+        }else{
+            console.log("nok")
+        }
+      }
+      </script>
+    
+    </head>
+    
+      <body>
+              
+       <form onsubmit="javascript: return check()">
+          
+            <label for="nome">nome</label> <br>
+            <input type="text" id="nome"> <br>
+
+            <label for="idade">idade</label> <br>
+            <input type="text" id="idade"> <br>  
+
+            <label for="altura">altura</label> <br>
+            <input type="text" id="altura"> <br>  
+
+            <label for="peso">peso</label> <br>
+            <input type="text" id="peso"> <br>                 
+    
+            <input type="submit" value="Enviar">
+    
+       </form>
+    
+         
+      </body>
+    
+    </html>
