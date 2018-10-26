@@ -1,3 +1,3 @@
 function msg(){  
- alert("Hello Javatpoint");  
+ alert("Cadastro completo");  
 }  
